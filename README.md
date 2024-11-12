@@ -16,7 +16,7 @@ Promover uma economia circular que ajude na recuperação de pequenos negócios,
 O projeto foi desenvolvido durante o evento da 8ª Charcode Hackathon em novembro de 2024. Em apenas dois dias de desenvolvimento, algumas funcionalidades ainda estão incompletas, mas a estrutura central está funcional.
 
 ### 💻 Detalhes Técnicos
-- **Tecnologias Utilizadas:** HTML, CSS, JavaScript, Banco de Dados, PHP.
+- **Tecnologias Utilizadas:** HTML, CSS, JavaScript, PHP.
 
 ### 🤲 Contribuições
 Contribuições são bem-vindas! Sinta-se à vontade para abrir issues para reportar bugs ou sugerir melhorias e enviar pull requests com suas alterações.
