@@ -1,0 +1,26 @@
+[
+    {
+        "nome": "DEPS",
+        "email": "deps@gmail.com",
+        "senha": "$2y$10$t2RlxQ.qodrNzGVH0sOMbuwvxJrRbLUH550UsmTaL\/Bcb4lEo18vu",
+        "cnpj": "12312312312312",
+        "queroAjudar": "1",
+        "precisoAjuda": "1"
+    },
+    {
+        "nome": "DEPS2",
+        "email": "deps@gmail.com",
+        "senha": "$2y$10$2uHHH.DSh69W3jE6Ouv83eiaeMIXRbvVCOu\/Hq59\/2pewVCCXIAUq",
+        "cnpj": "12312312312312",
+        "queroAjudar": "sim",
+        "precisoAjuda": "nao"
+    },
+    {
+        "nome": "DEPS",
+        "email": "deps@gmail",
+        "senha": "$2y$10$7fbBjdQ47V4k7oyf8pUV1uxr1tIi\/dFlryp8XgwPbn7nnRMk3Rn9y",
+        "cnpj": "12312312312312",
+        "queroAjudar": "nao",
+        "precisoAjuda": "sim"
+    }
+]

@@ -1,0 +1,14 @@
+[
+    {
+        "nome": "Kaio",
+        "email": "kaio@gamil.com",
+        "senha": "$2y$10$jZ8oJI0rJ7pAWmC6njjNsu4TO.\/A22rBF7UFzH69GMn2UfChg9r8.",
+        "cpf": "12312312312"
+    },
+    {
+        "nome": "Miguel",
+        "email": "2@2",
+        "senha": "$2y$10$nJsKwENMh38RKnQ8aAS4XO24JO\/qb52h4gLNQPdEB8yaHvQeYdewO",
+        "cpf": "12312312312"
+    }
+]
