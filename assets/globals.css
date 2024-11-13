@@ -1,0 +1,98 @@
+/* Cabeçalho */
+header {
+  background-color: #0d5eb4;
+  color: white;
+}
+
+/* Frase no topo do header */
+.topo-header {
+  text-align: center;
+  padding: 1.25rem;
+}
+
+.topo-header h3 {
+  font-size: 1.5rem;
+}
+
+/* Navegação com logo e botões */
+.navegacao-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.25rem 2.25rem;
+}
+
+.logo img {
+  height: 60px;
+}
+
+.icone-empresa i {
+  font-size: 2.5rem;
+}
+
+.botoes-header button {
+  background-color: #28a745;
+  color: white;
+  padding: 15px 25px;
+  border: none;
+  cursor: pointer;
+  margin-left: 10px;
+  border-radius: 8px;
+  font-size: 1.2rem;
+}
+
+.botoes-header button:hover {
+  background-color: #218838;
+}
+
+/* Seção com imagem de fundo e frase de destaque */
+.imagem-calamidade {
+  background-image: url('../assets/imgs/calamidade.webp'); /* ajuste o caminho conforme a localização do arquivo CSS */
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  opacity: 0.9;
+}
+
+.frase-destaque {
+  font-size: 3.5rem;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  color: white;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.85);
+  padding: 10px 20px;
+  border-radius: 10px;
+  position: absolute;
+  z-index: 1;
+  text-transform: uppercase;
+}
+
+/* Seção de botões principais */
+.acoes {
+  display: flex;
+  justify-content: space-around;
+  margin: 8rem 0;
+}
+
+.acoes .acao {
+  flex: 1;
+  text-align: center;
+}
+
+.btn-acao {
+  background-color: #0d5eb4;
+  color: white;
+  padding: 30px 40px;
+  font-size: 3rem;
+  border: none;
+  cursor: pointer;
+  border-radius: 18px;
+}
+
+.btn-acao:hover {
+  background-color: #0056b3;
+}
