@@ -1,4 +1,16 @@
+<?php 
+
+session_start();
+
+if (!isset($_SESSION['usuario'])) {
+    header("Location: ../public/loginEmpresa.php");
+    exit;
+}
+
+?>
 <!DOCTYPE html>
+
+
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -32,7 +44,7 @@
   <body>
     <div class="main">
       <div class="left">
-        <form action="#" method="post">
+        <form action="../routes/necessito.php" method="post">
           <h4 class="cardtittle">Formulário de Cadastro</h4>
           <p class="subtitle">Todos reunidos para ajudar a sociedade</p>
           <br />
@@ -43,18 +55,29 @@
           </div>
 
           <div class="form-group">
-            <label for="nome">Endereço:</label>
-            <input type="text" id="nome" name="nome" placeholder="Digite seu endereço" required />
-          </div>
-
-          <div class="form-group">
-            <label for="nome">CPF:</label>
-            <input type="text" id="nome" name="nome" placeholder="Digite seu CPF" required />
-          </div>
-
-          <div class="form-group">
             <label for="email">Email:</label>
             <input type="email" id="email" name="email" placeholder="Digite seu email" required />
+          </div>
+
+          <div class="form-group">
+            <label for="endereco">Endereco:</label>
+            <input type="text" id="endereco" name="endereco" placeholder="Digite seu endereco" required />
+          </div>
+
+          <div class="form-group">
+            <label for="telefone">Telefone:</label>
+            <input type="text" id="telefone" name="telefone" placeholder="Digite seu telefone" required />
+          </div>
+
+          <div class="form-group">
+            <label for="categoria">Categoria:</label>
+            <select id="categoria" name="categoria" required>
+              <option value="dinheiro">Dinheiro</option>
+              <option value="material">Material</option>
+              <option value="local">Local</option>
+              <option value="mao_de_obra">Mão de obra</option>
+              <option value="outro">Outro</option>
+            </select>
           </div>
 
           <div class="form-group">

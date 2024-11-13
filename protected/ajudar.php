@@ -1,3 +1,13 @@
+<?php 
+
+session_start();
+
+if (!isset($_SESSION['usuario'])) {
+    header("Location: ../public/login.php");
+    exit;
+}
+
+?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -6,12 +16,9 @@
     <link rel="stylesheet" href="../assets/ajudar.css" />
     <link rel="stylesheet" href="../assets/globals.css" />
     <title>Deps</title>
-
-    <!-- Final da Imagem de fundo com frase de destaque -->
   </head>
-
   <body>
-    <header>
+  <header>
       <!-- Topo com frase -->
       <div class="topo-header">
         <h3>Juntos pela reconstrução da nossa comunidade</h3>
@@ -26,16 +33,15 @@
           <i class="fas fa-briefcase"></i>
         </div>
         <div class="botoes-header">
-          <button class="btn-header">Sair e Deslogar</button>
+          <a href="../routes/logout.php"><button class="btn-header">Sair e Deslogar</button></a> 
         </div>
       </div>
     </header>
     <div class="main">
       <div class="left">
-        <form action="#" method="post">
+        <form action="../routes/processarAjudaEmpresa.php" method="post">
           <h4 class="cardtittle">Formulário de Cadastro</h4>
-          <p class="subtitle">Muito obrigado pela sua colaboração</p>
-          <br />
+          <br/>
 
           <div class="form-group">
             <label for="nome">Nome:</label>
@@ -59,7 +65,7 @@
           </div>
 
           <div class="form-group">
-            <label for="descricao">Descrição:</label>
+            <label for="campo2">Descrição:</label>
             <textarea name="descricao" id="categoria"></textarea>
           </div>
 
@@ -70,18 +76,27 @@
       <div class="right">
         <h2 class="cardtittle">Precisam de ajuda</h2>
         <div class="card">
-          <img src="../assets/imgs/empresa.jpg" alt="Imagem do Card 1" />
-          <h3>Padaria Doce:</h3>
-          <p></p>
-          <p></p>
+          <img src="img/empresa.jpg" alt="Imagem do Card 1" />
+          <h3>Charqueadas - RS:</h3>
+          <p>situação critica.</p>
         </div>
         <div class="card">
-          <img src="../assets/imgs/empresa.jpg" alt="Imagem do Card 2" />
+          <img src="img/empresa.jpg" alt="Imagem do Card 2" />
           <h3>Charqueadas - RS:</h3>
           <p class="cardtext">situação critica.</p>
         </div>
         <div class="card">
-          <img src="../assets/imgs/empresa.jpg" alt="Imagem do Card 2" />
+          <img src="img/empresa.jpg" alt="Imagem do Card 2" />
+          <h3>Charqueadas - RS:</h3>
+          <p class="cardtext">situação critica.</p>
+        </div>
+        <div class="card">
+          <img src="img/empresa.jpg" alt="Imagem do Card 2" />
+          <h3>Charqueadas - RS:</h3>
+          <p class="cardtext">situação critica.</p>
+        </div>
+        <div class="card">
+          <img src="img/empresa.jpg" alt="Imagem do Card 2" />
           <h3>Charqueadas - RS:</h3>
           <p class="cardtext">situação critica.</p>
         </div>

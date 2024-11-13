@@ -57,6 +57,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         // Grava os dados atualizados no arquivo JSON
         $jsonData = json_encode($usuarios, JSON_PRETTY_PRINT);
         if (file_put_contents('../storage/usuarios.json', $jsonData)) {
+            header("Location: ../index.html"); 
             echo "Ajuda cadastrada com sucesso!";
         } else {
             echo "Erro ao cadastrar a ajuda. Tente novamente.";
