@@ -61,7 +61,7 @@ header {
 
 /* Seção com imagem de fundo e frase de destaque */
 .imagem-calamidade {
-    background-image: url('/assets/imgs/calamidade.webp'); /* ajuste o caminho conforme a localização do arquivo CSS */
+    background-image: url('../assets/imgs/calamidade.webp'); /* ajuste o caminho conforme a localização do arquivo CSS */
     background-size: cover;
     background-position: center;
     height: 500px;
