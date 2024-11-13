@@ -2,18 +2,15 @@
 session_start();
 
 // Verifica se o usuário está logado
-if (!isset($_SESSION['usuario_id'])) {
+if (!isset($_SESSION['usuario'])) {
     echo "Você precisa estar logado para cadastrar a ajuda.";
     exit();
 }
 
-// Verificação do conteúdo de $_SESSION['usuario_id']
-var_dump($_SESSION['usuario_id']);
-
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     // Coleta os dados do formulário
     $nome = $_POST['nome'];
-    $email = $_POST['email'];
+    $telefone = $_POST['telefone'];
     $categoria = $_POST['categoria'];
     $descricao = $_POST['descricao'];
     $outro = $_POST['outro'] ?? '';
@@ -49,7 +46,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $ajuda = [
             'usuario_id' => $usuarioId,
             'nome' => $nome,
-            'email' => $email,
+            'telefone' => $telefone,
             'categoria' => ($categoria === 'outro' && !empty($outro)) ? $outro : $categoria,
             'descricao' => $descricao
         ];

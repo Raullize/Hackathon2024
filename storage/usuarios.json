@@ -1,85 +1,40 @@
 [
     {
-        "nome": "Kaio",
-        "email": "kaio@gamil.com",
-        "senha": "$2y$10$jZ8oJI0rJ7pAWmC6njjNsu4TO.\/A22rBF7UFzH69GMn2UfChg9r8.",
+        "id": "67340a1ba11c5",
+        "nome": "Miguel",
+        "email": "1@1",
+        "senha": "$2y$10$YqDDu5z7IXqY7lWpgg0eFObkbxAn2FuxR7rcE3q21rm9wCEbgNzUG",
+        "telefone": "1",
         "cpf": "12312312312",
         "ajudas": [
             {
-                "usuario_id": null,
-                "nome": "Miguel",
-                "email": "miguelstrapazon@gmail.com",
-                "categoria": "material",
-                "descricao": "213"
-            },
-            {
-                "usuario_id": null,
-                "nome": "Miguel",
-                "email": "miguelstrapazon@gmail.com",
-                "categoria": "material",
-                "descricao": "213"
-            },
-            {
+                "usuario_id": "67340a1ba11c5",
                 "nome": "Miguel",
                 "telefone": "51999832724",
-                "categoria": "asd",
-                "descricao": "sadasd"
+                "categoria": "dinheiro",
+                "descricao": "50 conto"
             },
             {
+                "usuario_id": "67340a1ba11c5",
                 "nome": "Miguel",
-                "telefone": "51999832724",
-                "categoria": "asd",
-                "descricao": "sadasd"
+                "email": null,
+                "categoria": "dinheiro",
+                "descricao": "3"
+            },
+            {
+                "usuario_id": "67340a1ba11c5",
+                "nome": "Miguel",
+                "telefone": "1",
+                "categoria": "dinheiro",
+                "descricao": "3"
+            },
+            {
+                "usuario_id": "67340a1ba11c5",
+                "nome": "Miguel",
+                "telefone": "123",
+                "categoria": "dinheiro",
+                "descricao": "5000 conto"
             }
         ]
-    },
-    {
-        "nome": "Miguel",
-        "email": "2@2",
-        "senha": "$2y$10$nJsKwENMh38RKnQ8aAS4XO24JO\/qb52h4gLNQPdEB8yaHvQeYdewO",
-        "cpf": "12312312312"
-    },
-    {
-        "id": "6733d97e99d39",
-        "nome": "Miguel1",
-        "email": "1@1",
-        "senha": "$2y$10$bFCwEgkCg1ajfkcecgAoRuCLytpgRL1zl5xFj\/nouUPjVM\/lV7eKa",
-        "cpf": "12312312312",
-        "ajudas": []
-    },
-    {
-        "id": "6733d9afdffaa",
-        "nome": "Miguel1",
-        "email": "1@1",
-        "senha": "$2y$10$f3ZUMdQhqejI7vaxJHdXGekzypHtGbAiQ5M3EeRs7A5z2dbJu\/5nq",
-        "cpf": "12312312312",
-        "ajudas": []
-    },
-    {
-        "id": "6733e0959cd2a",
-        "nome": "Miguel",
-        "email": "1@2",
-        "senha": "$2y$10$z7XuBKtERT.8SDHdjeV7lOwV0hMbzQdjqGH.y9JO.hUpmnWdq\/Bj6",
-        "cpf": "23423423423",
-        "telefone": "2",
-        "ajudas": []
-    },
-    {
-        "id": "6733e461203c3",
-        "nome": "Miguel",
-        "email": "1@5",
-        "senha": "$2y$10$mBuHIygEO5wBxqMCenP1qO\/KVK450c58DD62IKr7pkYYY1aXv5QQS",
-        "telefone": "1",
-        "cpf": "12312312312",
-        "ajudas": []
-    },
-    {
-        "id": "6733e53a3dca7",
-        "nome": "Kaio",
-        "email": "kaio@gmail",
-        "senha": "$2y$10$FCw7FPQPs1VKt3CDUz2vau3wcE12wkUw\/fZZJ.C59MlB9v.qrefDO",
-        "telefone": "123",
-        "cpf": "12312312312",
-        "ajudas": []
     }
 ]
