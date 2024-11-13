@@ -6,9 +6,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $email = $_POST['email'] ?? '';
     $senha = $_POST['senha'] ?? '';
 
-    if (Empresa::autenticar($email, $senha)) {
+    $empresa = Empresa::autenticar($email, $senha);
+
+    if ($empresa) {
+        $_SESSION['empresa_id'] = $empresa['id'];
+        $_SESSION['empresa'] = $empresa;
         echo "Login bem-sucedido! Redirecionando...";
-        header("Location: ../protected/dashboard.php"); 
+        header("Location: ../protected/logadoEmpresa.php"); 
         exit;
     } else {
         echo "Email ou senha inválidos.";

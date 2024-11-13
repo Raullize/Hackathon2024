@@ -6,7 +6,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
     $email = $_GET['email'] ?? '';
     $senha = $_GET['senha'] ?? '';
 
-    // Autentica o usuário e retorna os dados
     $usuario = Usuario::autenticar($email, $senha);
 
     if ($usuario) {
@@ -20,4 +19,3 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
 } else {
     echo "Método inválido. Por favor, envie o formulário.";
 }
-?>
