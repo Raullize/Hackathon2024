@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Cadastro de Empresa</h2>
+    <a href="cadastro.html">Sou usuario</a>
+    <form action="routes/processar.php" method="POST">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="senha">Senha:</label>
+        <input type="password" id="senha" name="senha" required><br><br>
+
+        <label for="cnpj">CNPJ:</label>
+        <input type="text" id="cnpj" name="cnpj" required><br><br>
+
+
+        <p>Quero Ajudar:</p>
+        <label>
+            <input type="radio" name="queroAjudar" value="sim" required> Sim
+        </label>
+        <label>
+            <input type="radio" name="queroAjudar" value="nao" required> Não
+        </label>
+        <br><br>
+
+        <p>Preciso de Ajuda:</p>
+        <label>
+            <input type="radio" name="precisoAjuda" value="sim" required> Sim
+        </label>
+        <label>
+            <input type="radio" name="precisoAjuda" value="nao" required> Não
+        </label>
+        <input type="hidden" name="tipo" value="empresa">
+        <br><br>
+
+        <button type="submit">Cadastrar Empresa</button>
+    </form>
+</body>
+</html>

@@ -2,10 +2,13 @@
 session_start();
 
 if (!isset($_SESSION['usuario'])) {
-    header("Location: ../routes/login.php");
+    header("Location: ../index.html");
     exit;
 }
 
+
+var_dump($_SESSION); // Para verificar todas as variáveis de sessão
+$idUsuario = $_SESSION['usuario_id'];
 $nomeUsuario = $_SESSION['usuario']['nome'];
 $emailUsuario = $_SESSION['usuario']['email'];
 
@@ -49,6 +52,8 @@ $emailUsuario = $_SESSION['usuario']['email'];
 
         <button type="submit">Oferecer Ajuda</button>
     </form>
+
+    <a href="../routes/logout.php">Logout</a> <!-- Link para logout -->
 
     <script>
       

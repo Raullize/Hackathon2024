@@ -81,5 +81,14 @@
         "telefone": "123",
         "cpf": "12312312312",
         "ajudas": []
+    },
+    {
+        "id": "6733f9470a3e3",
+        "nome": "Miguel",
+        "email": "1@6",
+        "senha": "$2y$10$9VkYE8atlfFTA\/tLmfn7OONGqXlIgkY0tkfqZsohtYUizenSqs18.",
+        "telefone": "123",
+        "cpf": "12312312312",
+        "ajudas": []
     }
 ]

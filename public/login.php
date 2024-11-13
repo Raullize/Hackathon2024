@@ -12,6 +12,7 @@ session_start();
 </head>
 <body>
     <h2>Login</h2>
+    <a href="loginEmpresa.php">Sou empresa</a>
     <form action="../routes/login.php" method="GET">
         <label for="email">Email:</label>
         <input type="email" id="email" name="email" required><br><br>
