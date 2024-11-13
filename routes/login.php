@@ -1,15 +1,15 @@
 <?php
-require_once '../app/helpers.php';
-require_once '../app/Usuario.php';
+session_start();
+include '../app/Usuario.php';
 
-session_start_once();
-
-if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    $email = $_POST['email'] ?? '';
-    $senha = $_POST['senha'] ?? '';
+if ($_SERVER['REQUEST_METHOD'] === 'GET') {
+    $email = $_GET['email'] ?? '';
+    $senha = $_GET['senha'] ?? '';
 
     if (Usuario::autenticar($email, $senha)) {
+        $_SESSION['usuario_id'] = $usuario['id'];
         echo "Login bem-sucedido! Bem-vindo!";
+        header("Location: ../protected/logado.php"); 
     } else {
         echo "Email ou senha inválidos.";
     }

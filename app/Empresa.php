@@ -5,14 +5,16 @@ class Empresa {
     private $email;
     private $senha;
     private $cnpj;
+    private $telefone;
     private $queroAjudar;
     private $precisoAjuda;
 
-    public function __construct($nome, $email, $senha, $cnpj, $queroAjudar, $precisoAjuda) {
+    public function __construct($nome, $email, $senha, $cnpj, $telefone, $queroAjudar, $precisoAjuda) {
         $this->nome = $nome;
         $this->email = $email;
         $this->senha = password_hash($senha, PASSWORD_BCRYPT);
         $this->cnpj = $cnpj;
+        $this->telefone = $telefone;
         $this->queroAjudar = $queroAjudar;
         $this->precisoAjuda = $precisoAjuda;
     }
@@ -38,6 +40,7 @@ class Empresa {
             'email' => $this->email,
             'senha' => $this->senha,
             'cnpj' => $this->cnpj,
+            'telefone' => $this->telefone,
             'queroAjudar' => $this->queroAjudar,
             'precisoAjuda' => $this->precisoAjuda
         ];
@@ -54,11 +57,12 @@ class Empresa {
 
             foreach ($empresas as $empresa) {
                 if ($empresa['email'] === $email && password_verify($senha, $empresa['senha'])) {
-                    // Inicia a sessão para a empresa autenticada
+
                     $_SESSION['empresa'] = [
                         'nome' => $empresa['nome'],
                         'email' => $empresa['email'],
-                        'cnpj' => $empresa['cnpj']
+                        'cnpj' => $empresa['cnpj'],
+                        'telefone' => $empresa['telefone'] 
                     ];
                     return true;
                 }
@@ -77,6 +81,10 @@ class Empresa {
 
     public function getCnpj() {
         return $this->cnpj;
+    }
+
+    public function getTelefone() {
+        return $this->telefone;
     }
 }
 ?>
