@@ -89,7 +89,7 @@ header {
 .acoes {
     display: flex;
     justify-content: space-around;
-    margin: 8rem 0;
+    margin: 6rem 0;
 }
 
 .acoes .acao {
@@ -118,7 +118,6 @@ header {
 }
 
 .maiores-doadores h2 {
-    padding-top: 3rem;
     margin: 3rem 0;
     font-size: 3rem;
 }
