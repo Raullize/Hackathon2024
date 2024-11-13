@@ -1,3 +1,13 @@
+<?php 
+
+session_start();
+
+if (!isset($_SESSION['usuario'])) {
+    header("Location: ../public/login.php");
+    exit;
+}
+
+?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -6,12 +16,9 @@
     <link rel="stylesheet" href="../assets/ajudar.css" />
     <link rel="stylesheet" href="../assets/globals.css" />
     <title>Deps</title>
-
-    <!-- Final da Imagem de fundo com frase de destaque -->
   </head>
-
   <body>
-    <header>
+  <header>
       <!-- Topo com frase -->
       <div class="topo-header">
         <h3>Juntos pela reconstrução da nossa comunidade</h3>
@@ -26,16 +33,15 @@
           <i class="fas fa-briefcase"></i>
         </div>
         <div class="botoes-header">
-          <button class="btn-header">Sair e Deslogar</button>
+          <a href="../routes/logout.php"><button class="btn-header">Sair e Deslogar</button></a> 
         </div>
       </div>
     </header>
     <div class="main">
       <div class="left">
-        <form action="#" method="post">
+        <form action="../routes/processarAjudaEmpresa.php" method="post">
           <h4 class="cardtittle">Formulário de Cadastro</h4>
-          <p class="subtitle">Muito obrigado pela sua colaboração</p>
-          <br />
+          <br/>
 
           <div class="form-group">
             <label for="nome">Nome:</label>
@@ -59,7 +65,7 @@
           </div>
 
           <div class="form-group">
-            <label for="descricao">Descrição:</label>
+            <label for="campo2">Descrição:</label>
             <textarea name="descricao" id="categoria"></textarea>
           </div>
 
@@ -70,27 +76,29 @@
       <div class="right">
         <h2 class="cardtittle">Precisam de ajuda</h2>
         <div class="card">
-          <img src="../assets/imgs/empresa.jpg" alt="Imagem do Card 1" />
-          <h3>Padaria Doce:</h3>
-          <p class="cardtext">Rua Violeta, Bairro Roxo, N°123</p>
-          <p class="cardtext">docepadaria@gmail.com</p>
-          <p class="cardtext">Devido a incessante queda de lux perdemos 2 fornos elétricos e um freezer com embutidos, pedimos uma geladeira reserva até a nossa ser consertada.</p>
+          <img src="img/empresa.jpg" alt="Imagem do Card 1" />
+          <h3>Charqueadas - RS:</h3>
+          <p>situação critica.</p>
         </div>
         <div class="card">
-          <img src="../assets/imgs/empresa.jpg" alt="Imagem do Card 2" />
-          <h3>Ferragem do Prego:</h3>
-          <p class="cardtext">Rua Vermelho, Bairro Laranja, N°123</p>
-          <p class="cardtext">ferragemprego@gmail.com</p>
-          <p class="cardtext">Fomos completamente inundados devido a localização da ferragem, pedimos ajuda em mão de obra para limparmos o local e preparar a reabertura. </p>
+          <img src="img/empresa.jpg" alt="Imagem do Card 2" />
+          <h3>Charqueadas - RS:</h3>
+          <p class="cardtext">situação critica.</p>
         </div>
         <div class="card">
-          <img src="../assets/imgs/empresa.jpg" alt="Imagem do Card 2" />
-          <h3>Restaurante América:</h3>
-          <p class="cardtext">Rua Azul, Bairro Ciano, N°123</p>
-          <p class="cardtext">Americafood@gmail.com</p>
-          <p class="cardtext">Os ventos fortes danificaram extremamente o telhado do local, se possivel gostariamos de materiais e mão de obra para reparo do mesmo para não perdermos mais nada. </p>
+          <img src="img/empresa.jpg" alt="Imagem do Card 2" />
+          <h3>Charqueadas - RS:</h3>
+          <p class="cardtext">situação critica.</p>
         </div>
-
+        <div class="card">
+          <img src="img/empresa.jpg" alt="Imagem do Card 2" />
+          <h3>Charqueadas - RS:</h3>
+          <p class="cardtext">situação critica.</p>
+        </div>
+        <div class="card">
+          <img src="img/empresa.jpg" alt="Imagem do Card 2" />
+          <h3>Charqueadas - RS:</h3>
+          <p class="cardtext">situação critica.</p>
         </div>
       </div>
     </div>

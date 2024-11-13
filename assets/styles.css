@@ -127,14 +127,23 @@ header {
   justify-content: space-around;
 }
 
+/* Estilo para os cards dos maiores doadores */
 .card {
-  background-color: #fff;
-  border: 1px solid #ddd;
-  width: 25rem;
-  height: 25rem;
-  padding: 1rem;
-  text-align: center;
-  border-radius: 1rem;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    width: 25rem;
+    height: 25rem;
+    padding: 1rem;
+    text-align: center;
+    border-radius: 1rem;
+    transition: transform 0.9s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+}
+
+/* Efeito de elevação ao passar o mouse sobre o card */
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .card img {
@@ -144,9 +153,10 @@ header {
   border-radius: 1rem;
 }
 
+/* Espaçamento acima do parágrafo */
 .card p {
-  font-weight: bold;
-  margin-top: 10px;
+    font-weight: bold;
+    padding-top: 3.5rem;
 }
 
 /* Footer */
