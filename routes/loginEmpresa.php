@@ -8,7 +8,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     if (Empresa::autenticar($email, $senha)) {
         echo "Login bem-sucedido! Redirecionando...";
-        header("Location: ../dashboard.php"); // Redireciona para uma página protegida
+        header("Location: ../protected/dashboard.php"); 
         exit;
     } else {
         echo "Email ou senha inválidos.";

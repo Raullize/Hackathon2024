@@ -1,7 +1,6 @@
 <?php
 session_start();
 
-// Verifica se a empresa está autenticada
 if (!isset($_SESSION['empresa'])) {
     header("Location: ../routes/loginEmpresa.php");
     exit;
