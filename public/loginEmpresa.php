@@ -7,6 +7,7 @@
 </head>
 <body>
     <h2>Login de Empresa</h2>
+    <a href="login.php">Sou usuario</a>
     <form action="../routes/loginEmpresa.php" method="POST">
         <label for="email">Email:</label>
         <input type="email" id="email" name="email" required><br><br>

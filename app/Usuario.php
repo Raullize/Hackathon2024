@@ -52,7 +52,6 @@ class Usuario {
     public function adicionarAjuda($ajuda) {
         $this->ajudas[] = $ajuda;
     }
-
     public static function autenticar($email, $senha) {
         if (file_exists('../storage/usuarios.json')) {
             $json = file_get_contents('../storage/usuarios.json');
@@ -65,19 +64,20 @@ class Usuario {
                         session_start();
                     }
     
+                    // Atribuir a sessão corretamente
                     $_SESSION['usuario'] = [
+                        'id' => $usuario['id'],
                         'nome' => $usuario['nome'],
                         'email' => $usuario['email'],
                         'telefone' => $usuario['telefone']
                     ];
-
-                    $_SESSION['usuario']
     
-                    return true;
+                    // Retornar o usuário para garantir que o login seja bem-sucedido
+                    return $usuario;
                 }
             }
         }
-        return false;
+        return false;  // Se não encontrou o usuário
     }
 
     public function getId() {
