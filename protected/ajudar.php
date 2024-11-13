@@ -2,7 +2,8 @@
 
 session_start();
 
-if (!isset($_SESSION['usuario'])) {
+
+if (!isset($_SESSION['usuario']) && !isset($_SESSION['empresa'])) {
     header("Location: ../public/login.php");
     exit;
 }
