@@ -15,6 +15,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             $usuario = new Usuario($_POST['nome'], $_POST['email'], $_POST['senha'], $_POST['telefone'], $_POST['cpf']);
 
             if ($usuario->salvar()) {
+                header("Location: ../public/login.php");
                 echo "Usuário cadastrado com sucesso!";
             } else {
                 echo "Erro ao cadastrar o usuário. Verifique o CPF.";
