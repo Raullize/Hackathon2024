@@ -4,18 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login de Empresa</title>
+    <link rel="stylesheet" href="../assets/loginCadastro.css">
 </head>
 <body>
-    <h2>Login de Empresa</h2>
-    <a href="login.php">Sou usuario</a>
-    <form action="../routes/loginEmpresa.php" method="POST">
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required><br><br>
-
-        <label for="senha">Senha:</label>
-        <input type="password" id="senha" name="senha" required><br><br>
-
-        <button type="submit">Entrar</button>
-    </form>
+    <div class="form-container">
+        <h2>Login de Empresa</h2>
+        <a href="login.php">Sou usuário</a>
+        <form action="../routes/loginEmpresa.php" method="POST">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="senha">Senha:</label>
+            <input type="password" id="senha" name="senha" required>
+            <button type="submit">Entrar</button>
+        </form>
+        <a href="../index.html" class="btn-voltar">Voltar</a>
+    </div>
 </body>
 </html>
