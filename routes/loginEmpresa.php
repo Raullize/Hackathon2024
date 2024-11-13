@@ -12,7 +12,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $_SESSION['empresa_id'] = $empresa['id'];
         $_SESSION['empresa'] = $empresa;
         echo "Login bem-sucedido! Redirecionando...";
-        header("Location: ../protected/logadoEmpresa.php"); 
+        header("Location: /hackathon2024/");
         exit;
     } else {
         echo "Email ou senha inválidos.";

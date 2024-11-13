@@ -36,13 +36,13 @@ if (!isset($_SESSION['usuario'])) {
           <i class="fas fa-briefcase"></i>
         </div>
         <div class="botoes-header">
-          <button class="btn-header">Sair e Deslogar</button>
+          <a href="../routes/logout.php"><button class="btn-header">Sair e Deslogar</button></a>
         </div>
       </div>
     </header>
     <div class="main">
       <div class="left">
-        <form action="#" method="post">
+        <form action="../routes/processarAjuda.php" method="post">
           <h4 class="cardtittle">Formulário de Cadastro</h4>
           <p class="subtitle">Muito obrigado pela sua colaboração</p>
           <br />
@@ -64,8 +64,8 @@ if (!isset($_SESSION['usuario'])) {
           </div>
 
           <div class="form-group">
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" placeholder="Digite seu email" required />
+            <label for="telefone">Telefone:</label>
+            <input type="text" id="telefone" name="telefone" placeholder="Digite seu email" required />
           </div>
 
           <div class="form-group">
@@ -79,30 +79,11 @@ if (!isset($_SESSION['usuario'])) {
 
       <div class="right">
         <h2 class="cardtittle">Precisam de ajuda</h2>
-        <div class="card">
-          <img src="../assets/imgs/empresa.jpg" alt="Imagem do Card 1" />
-          <h3>Padaria Doce:</h3>
-          <p class="cardtext">Rua Violeta, Bairro Roxo, N°123</p>
-          <p class="cardtext">docepadaria@gmail.com</p>
-          <p class="cardtext">Devido a incessante queda de lux perdemos 2 fornos elétricos e um freezer com embutidos, pedimos uma geladeira reserva até a nossa ser consertada.</p>
-        </div>
-        <div class="card">
-          <img src="../assets/imgs/empresa.jpg" alt="Imagem do Card 2" />
-          <h3>Ferragem do Prego:</h3>
-          <p class="cardtext">Rua Vermelho, Bairro Laranja, N°123</p>
-          <p class="cardtext">ferragemprego@gmail.com</p>
-          <p class="cardtext">Fomos completamente inundados devido a localização da ferragem, pedimos ajuda em mão de obra para limparmos o local e preparar a reabertura. </p>
-        </div>
-        <div class="card">
-          <img src="../assets/imgs/empresa.jpg" alt="Imagem do Card 2" />
-          <h3>Restaurante América:</h3>
-          <p class="cardtext">Rua Azul, Bairro Ciano, N°123</p>
-          <p class="cardtext">Americafood@gmail.com</p>
-          <p class="cardtext">Os ventos fortes danificaram extremamente o telhado do local, se possivel gostariamos de materiais e mão de obra para reparo do mesmo para não perdermos mais nada. </p>
-        </div>
+        <div id="cards-container"></div>
 
         </div>
       </div>
     </div>
+    <script src="../assets/js/mostrarLista.js"></script>
   </body>
 </html>

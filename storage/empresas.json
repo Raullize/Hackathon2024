@@ -1,225 +1,59 @@
 [
     {
-        "nome": "Miguel",
-        "email": "1@1",
-        "senha": "$2y$10$mcCOEFG6K4S6SkXMfiTo7ODJYI27V.6mKHsRd5CruucW1ZKXEA10m",
-        "telefone": "1",
-        "cnpj": "12312312312312",
-        "endereco": "RUA X TARARA",
-        "queroAjudar": "sim",
-        "precisoAjuda": "nao"
-    },
-    {
-        "id": "673411847de28",
+        "id": "673493d7b2a55",
         "nome": "DEPS",
-        "email": "1@1",
-        "senha": "$2y$10$JK5jHAImt4XJz0Vbz9ldQ.u6b4aAIgFSZo0m6WHCp81psu96iw3Qy",
-        "telefone": "1",
-        "cnpj": "12312312312312",
-        "endereco": "RUA X TARARA",
-        "queroAjudar": "sim",
-        "precisoAjuda": "nao",
-        "ajudas": [
-            {
-                "empresa_id": "673411847de28",
-                "nome": "Miguel",
-                "telefone": "1",
-                "email": "1@1",
-                "categoria": "dinheiro",
-                "descricao": "7"
-            },
-            {
-                "empresa_id": "673411847de28",
-                "nome": "Miguel",
-                "telefone": "1",
-                "email": "1@1",
-                "categoria": "dinheiro",
-                "descricao": "7"
-            },
-            {
-                "empresa_id": "673411847de28",
-                "nome": "Miguel",
-                "telefone": "1",
-                "email": "1@1",
-                "categoria": "dinheiro",
-                "descricao": "7"
-            },
-            {
-                "empresa_id": "673411847de28",
-                "nome": "Miguel",
-                "telefone": "1",
-                "email": "1@1",
-                "categoria": "dinheiro",
-                "descricao": "7"
-            },
-            {
-                "empresa_id": "673411847de28",
-                "nome": "Miguel",
-                "telefone": "1",
-                "email": "1@1",
-                "categoria": "dinheiro",
-                "descricao": "7"
-            },
-            {
-                "empresa_id": "673411847de28",
-                "nome": "Miguel",
-                "telefone": "1",
-                "email": "1@1",
-                "categoria": "dinheiro",
-                "descricao": "7"
-            },
-            {
-                "empresa_id": "673411847de28",
-                "nome": "Miguel",
-                "telefone": "1",
-                "email": "1@1",
-                "categoria": "dinheiro",
-                "descricao": "7"
-            },
-            {
-                "empresa_id": "673411847de28",
-                "nome": "DIFERENTE",
-                "telefone": "123123",
-                "email": "1@1",
-                "categoria": "dinheiro",
-                "descricao": "1"
-            },
-            {
-                "empresa_id": "673411847de28",
-                "nome": "Miguel",
-                "telefone": "123",
-                "email": "1@1",
-                "categoria": "dinheiro",
-                "descricao": "1"
-            },
-            {
-                "empresa_id": "673411847de28",
-                "nome": "Miguel",
-                "telefone": "2",
-                "email": "1@1",
-                "categoria": "dinheiro",
-                "descricao": "2"
-            },
-            {
-                "empresa_id": "673411847de28",
-                "nome": "Item 3",
-                "telefone": "2",
-                "email": "1@1",
-                "categoria": "dinheiro",
-                "descricao": "2"
-            },
-            {
-                "empresa_id": "673411847de28",
-                "nome": "2",
-                "telefone": "2",
-                "email": "1@1",
-                "categoria": "dinheiro",
-                "descricao": "2"
-            },
-            {
-                "empresa_id": "673411847de28",
-                "nome": "Miguel",
-                "telefone": "2",
-                "email": "1@1",
-                "categoria": "dinheiro",
-                "descricao": "2"
-            },
-            {
-                "empresa_id": "673411847de28",
-                "nome": "2",
-                "telefone": "2",
-                "email": "1@1",
-                "categoria": "dinheiro",
-                "descricao": "2"
-            },
-            {
-                "empresa_id": "673411847de28",
-                "nome": "2",
-                "telefone": "2",
-                "email": "1@1",
-                "categoria": "dinheiro",
-                "descricao": "2"
-            },
-            {
-                "empresa_id": "673411847de28",
-                "nome": "2",
-                "telefone": "2",
-                "email": "1@1",
-                "categoria": "dinheiro",
-                "descricao": "2"
-            },
-            {
-                "empresa_id": "673411847de28",
-                "nome": "2",
-                "telefone": "2",
-                "email": "1@1",
-                "categoria": "dinheiro",
-                "descricao": "2"
-            },
-            {
-                "empresa_id": "673411847de28",
-                "nome": "2",
-                "telefone": "2",
-                "email": "1@1",
-                "categoria": "dinheiro",
-                "descricao": "2"
-            },
-            {
-                "empresa_id": "673411847de28",
-                "nome": "2",
-                "telefone": "2",
-                "email": "1@1",
-                "categoria": "dinheiro",
-                "descricao": "2"
-            },
-            {
-                "empresa_id": "673411847de28",
-                "nome": "Miguel",
-                "telefone": "10000",
-                "email": "1@1",
-                "categoria": "dinheiro",
-                "descricao": "100000000000000000"
-            },
-            {
-                "empresa_id": "673411847de28",
-                "nome": "Miguel",
-                "telefone": "2",
-                "email": "1@1",
-                "categoria": "dinheiro",
-                "descricao": "2"
-            }
-        ],
+        "email": "deps@gmail.com",
+        "senha": "$2y$10$6gnMYqYgAgWNg9LJuVukw.qih0KhDXP6\/sk53RW6cV0ZOfeb5xDPG",
+        "telefone": "51999832724",
+        "cnpj": "12345678901234",
+        "endereco": "rua valdemar",
+        "queroAjudar": "nao",
+        "precisoAjuda": "sim",
         "necessito": [],
-        "doacoes": [
+        "necessidades": [
             {
-                "empresa_id": "673411847de28",
-                "nome": "Miguel",
-                "email": "1@1",
-                "endereco": "RUA X TARARA",
-                "telefone": "1",
+                "empresa_id": "673493d7b2a55",
+                "nome": "DEPS",
+                "email": "deps@gmail.com",
+                "endereco": "Rua Waldemar Rodrigues",
+                "telefone": "51999832724",
                 "categoria": "dinheiro",
-                "descricao": "asd"
-            },
-            {
-                "empresa_id": "673411847de28",
-                "nome": "Miguel",
-                "email": "1@1",
-                "endereco": "RUA X TARARA",
-                "telefone": "1",
-                "categoria": "dinheiro",
-                "descricao": "asd"
+                "descricao": "50 MIL"
             }
+
         ]
     },
     {
-        "id": "673412205049d",
+        "id": "6734941c95d40",
         "nome": "DEPS",
-        "email": "1@1",
-        "senha": "$2y$10$f7lC2\/q3DPwG8JnkxZhMbeEodIw\/9rtPMN0cn\/c3p7M5yM.S4oVoa",
+        "email": "deps@gmail.com",
+        "senha": "$2y$10$Ciu.5ct\/BdYMOsB5\/PhF3uBYWGABHBx3.67ICOFyGK\/t2g1eWkZ.y",
+        "telefone": "51999832724",
+        "cnpj": "12345678901234",
+        "endereco": "rua valdemar",
+        "queroAjudar": "nao",
+        "precisoAjuda": "sim"
+    },
+    {
+        "id": "6734943258bfd",
+        "nome": "DEPS2",
+        "email": "deps@gmail.com",
+        "senha": "$2y$10$u412mauaYBWjdr03\/wzdR.3nDm3DDYRoPMy0blfjiNd2nG7kyVUnu",
         "telefone": "1",
         "cnpj": "12312312312312",
-        "endereco": "RUA X TARARA",
-        "queroAjudar": "sim",
-        "precisoAjuda": "nao"
+        "endereco": "123",
+        "queroAjudar": "nao",
+        "precisoAjuda": "sim"
+    },
+    {
+        "id": "67349460011c5",
+        "nome": "DEPS2",
+        "email": "deps@gmail.com",
+        "senha": "$2y$10$jx0oZALRojpqGJZ0JICJquzAZ\/e6XheeV4zUO1zxFr0bZLd1vJ16S",
+        "telefone": "1",
+        "cnpj": "12312312312312",
+        "endereco": "123",
+        "queroAjudar": "nao",
+        "precisoAjuda": "sim"
     }
 ]

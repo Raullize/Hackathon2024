@@ -12,7 +12,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
         // Agora a sessão é corretamente configurada
         $_SESSION['usuario_id'] = $usuario['id']; // Atribuindo o ID do usuário corretamente
         echo "Login bem-sucedido! Bem-vindo!";
-        header("Location: ../protected/logado.php");
+        header("Location: ../protected/ajudar.php");
     } else {
         echo "Email ou senha inválidos.";
     }

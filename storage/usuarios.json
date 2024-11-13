@@ -36,5 +36,29 @@
                 "descricao": "5000 conto"
             }
         ]
+    },
+    {
+        "id": "67348d0bc389f",
+        "nome": "DEPS2",
+        "email": "1@9",
+        "senha": "$2y$10$YHKlg6W\/WqGLytzzSqrGtuisLY.vj1UQnyQJmMD6kWMrySzn7.IXq",
+        "telefone": "1",
+        "cpf": "12312312312",
+        "ajudas": [
+            {
+                "usuario_id": "67348d0bc389f",
+                "nome": "DEPS",
+                "telefone": null,
+                "categoria": "mao_de_obra",
+                "descricao": "Trabalho "
+            },
+            {
+                "usuario_id": "67348d0bc389f",
+                "nome": "DEPS2",
+                "telefone": "51999832724",
+                "categoria": "mao_de_obra",
+                "descricao": "ad"
+            }
+        ]
     }
 ]

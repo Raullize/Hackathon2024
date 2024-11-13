@@ -24,6 +24,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             $empresa = new Empresa($_POST['nome'], $_POST['email'], $_POST['senha'], $_POST['telefone'], $_POST['cnpj'], $_POST['endereco'], $_POST['queroAjudar'], $_POST['precisoAjuda']);
 
             if ($empresa->salvar()) {
+                header("Location: ../public/login.php");
                 echo "Empresa cadastrada com sucesso!";
             } else {
                 echo "Erro ao cadastrar a empresa. Verifique o CNPJ.";

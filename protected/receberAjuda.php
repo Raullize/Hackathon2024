@@ -2,7 +2,7 @@
 
 session_start();
 
-if (!isset($_SESSION['usuario'])) {
+if (!isset($_SESSION['empresa'])) {
     header("Location: ../public/loginEmpresa.php");
     exit;
 }
@@ -34,7 +34,7 @@ if (!isset($_SESSION['usuario'])) {
           <i class="fas fa-briefcase"></i>
         </div>
         <div class="botoes-header">
-          <button class="btn-header">Sair e Deslogar</button>
+         <a href="../routes/logout.php"><button class="btn-header">Sair e Deslogar</button></a> 
         </div>
       </div>
     </header>
@@ -44,7 +44,7 @@ if (!isset($_SESSION['usuario'])) {
   <body>
     <div class="main">
       <div class="left">
-        <form action="../routes/necessito.php" method="post">
+        <form action="../routes/necessito.php" method="post" enctype="multipart/form-data">
           <h4 class="cardtittle">Formulário de Cadastro</h4>
           <p class="subtitle">Todos reunidos para ajudar a sociedade</p>
           <br />
@@ -85,36 +85,22 @@ if (!isset($_SESSION['usuario'])) {
             <textarea name="descricao" id="categoria"></textarea>
           </div>
 
+          <div class="form-group">
+            <label for="imagem">Imagem:</label>
+            <input type="file" id="imagem" name="imagem" accept="image/*" />
+          </div>
+
           <button type="submit">Enviar</button>
         </form>
       </div>
 
       <div class="right">
         <h2 class="cardtittle">Colaboradores Dispostos</h2>
-        <div class="card">
-          <img src="../assets/imgs/empresa.jpg" alt="Imagem do Card 1" />
-          <h3>Metalúrgica:</h3>
-          <p class="cardtext">Material</p>
-          <p class="cardtext">metalurgica@gmail.com</p>
-          <p class="cardtext">Aos afetados na região norte do estado, podemos ofertar algumas ferramentas e materiais para reparar graves danos.</p>
-        </div>
-        <div class="card">
-          <img src="../assets/imgs/empresa.jpg" alt="Imagem do Card 2" />
-          <h3>Fazenda Feliz:</h3>
-          <p class="cardtext">Dinheiro</p>
-          <p class="cardtext">felizfazenda@gmail.com</p>
-          <p class="cardtext">Para quem precisar, podemos auxiliar com uma quantia financeira para compra de material ou pagamento de mão de obra.</p>
-        </div>
-        <div class="card">
-          <img src="../assets/imgs/empresa.jpg" alt="Imagem do Card 2" />
-          <h3>Queijo Minas:</h3>
-          <p class="cardtext">Outro</p>
-          <p class="cardtext">queijinbao@gmail.com</p>
-          <p class="cardtext">Em solidariedade às famílias afetadas, doaremos 50 unidades de cestas básicas e kits higiênicos para famílias com necessidades.</p>
-        </div>
+        <div id="ajudas-container"></div>
 
         </div>
       </div>
     </div>
+    <script src="../assets/js/mostrarListraUsuarios.js"></script>
   </body>
 </html>
