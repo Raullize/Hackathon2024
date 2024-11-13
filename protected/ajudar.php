@@ -43,7 +43,7 @@ if (!isset($_SESSION['usuario'])) {
     <div class="main">
       <div class="left">
         <form action="../routes/processarAjuda.php" method="post">
-          <h4 class="cardtittle">Formulário de Cadastro</h4>
+          <h4 class="cardtittle">No que você pode ajudar?</h4>
           <p class="subtitle">Muito obrigado pela sua colaboração</p>
           <br />
 
