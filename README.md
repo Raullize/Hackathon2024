@@ -1,4 +1,4 @@
-# 🌍 Plataforma de Economia Circular para Recuperação Econômica Local
+# 🌍 RenovaRS: Plataforma de Economia Circular para Recuperação Econômica Local
 
 ## 📄 Descrição
 Esta plataforma de economia circular é destinada a apoiar microempreendedores locais afetados por enchentes recentes no Rio Grande do Sul, promovendo a recuperação econômica e social das comunidades impactadas. Através de um sistema colaborativo, empreendedores podem listar suas necessidades, enquanto empresas, ONGs e membros da comunidade oferecem apoio por meio de doações de materiais, compartilhamento de ferramentas e disponibilização de espaços temporários.
