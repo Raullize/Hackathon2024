@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Preciso de Ajuda - RenovaRS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../assets/styles.css">
+  </head>
+
+  <body>
+    <header>
+      <div class="topo-header">
+        <div class="container">
+          <h3><i class="fas fa-heart"></i> Juntos pela reconstrução da nossa comunidade</h3>
+        </div>
+      </div>
+      <nav class="navegacao-header">
+        <div class="container">
+          <div class="logo">
+            <a href="../index.html">
+              <img src="../assets/imgs/logo.png" alt="Logo RenovaRS" />
+            </a>
+          </div>
+          <div class="nav-right">
+            <div class="user-info">
+              <span id="user-name">Usuário</span>
+              <a href="#" id="logout-btn" class="btn-logout">
+                <i class="fas fa-sign-out-alt"></i> Sair
+              </a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="dashboard-main">
+      <div class="dashboard-hero dashboard-hero-accent">
+        <div class="container">
+          <h1>Solicitar Ajuda para seu Negócio</h1>
+          <p>Conte para nós o que você precisa para reconstruir seu negócio após as enchentes</p>
+        </div>
+      </div>
+
+      <section class="help-request-section">
+        <div class="container">
+          <form id="requestHelpForm" class="help-request-form">
+            <div class="form-card">
+              <h2><i class="fas fa-info-circle"></i> Informações do Negócio</h2>
+              
+              <div class="form-group">
+                <label for="businessName">Nome do Negócio</label>
+                <input type="text" id="businessName" name="businessName" required 
+                       placeholder="Nome da sua empresa ou microempreendimento">
+              </div>
+              
+              <div class="form-group">
+                <label for="businessType">Tipo de Negócio</label>
+                <select id="businessType" name="businessType" required>
+                  <option value="">Selecione o tipo</option>
+                  <option value="comercio">Comércio</option>
+                  <option value="servico">Prestação de Serviços</option>
+                  <option value="industria">Indústria</option>
+                  <option value="artesanato">Artesanato</option>
+                  <option value="outro">Outro</option>
+                </select>
+              </div>
+              
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="businessSize">Tamanho do Negócio</label>
+                  <select id="businessSize" name="businessSize" required>
+                    <option value="">Selecione o tamanho</option>
+                    <option value="micro">Microempreendedor Individual</option>
+                    <option value="pequeno">Pequeno Porte</option>
+                    <option value="medio">Médio Porte</option>
+                    <option value="grande">Grande Porte</option>
+                  </select>
+                </div>
+                
+                <div class="form-group">
+                  <label for="employeeCount">Número de Funcionários</label>
+                  <input type="number" id="employeeCount" name="employeeCount" min="0" 
+                         placeholder="Quantidade de colaboradores">
+                </div>
+              </div>
+              
+              <div class="form-group">
+                <label for="businessAddress">Endereço do Negócio</label>
+                <input type="text" id="businessAddress" name="businessAddress" required 
+                       placeholder="Rua, número, bairro, cidade">
+              </div>
+            </div>
+            
+            <div class="form-card">
+              <h2><i class="fas fa-exclamation-triangle"></i> Danos e Perdas</h2>
+              
+              <div class="form-group">
+                <label for="damageLevel">Nível de Dano Sofrido</label>
+                <select id="damageLevel" name="damageLevel" required>
+                  <option value="">Selecione o nível</option>
+                  <option value="leve">Leve - Danos superficiais</option>
+                  <option value="moderado">Moderado - Parte do estabelecimento afetado</option>
+                  <option value="grave">Grave - Maioria do estabelecimento afetado</option>
+                  <option value="total">Total - Estabelecimento completamente afetado</option>
+                </select>
+              </div>
+              
+              <div class="form-group">
+                <label>Tipo de Danos (selecione todos que se aplicam)</label>
+                <div class="checkbox-grid">
+                  <div class="checkbox-option">
+                    <input type="checkbox" id="damageStructure" name="damageType" value="estrutura">
+                    <label for="damageStructure">Estrutura do Imóvel</label>
+                  </div>
+                  <div class="checkbox-option">
+                    <input type="checkbox" id="damageEquipment" name="damageType" value="equipamentos">
+                    <label for="damageEquipment">Equipamentos</label>
+                  </div>
+                  <div class="checkbox-option">
+                    <input type="checkbox" id="damageInventory" name="damageType" value="estoque">
+                    <label for="damageInventory">Estoque/Mercadorias</label>
+                  </div>
+                  <div class="checkbox-option">
+                    <input type="checkbox" id="damageUtilities" name="damageType" value="utilidades">
+                    <label for="damageUtilities">Água/Luz/Internet</label>
+                  </div>
+                  <div class="checkbox-option">
+                    <input type="checkbox" id="damageFurniture" name="damageType" value="moveis">
+                    <label for="damageFurniture">Móveis</label>
+                  </div>
+                  <div class="checkbox-option">
+                    <input type="checkbox" id="damageDocuments" name="damageType" value="documentos">
+                    <label for="damageDocuments">Documentos</label>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="form-group">
+                <label for="damageDescription">Descreva os danos em detalhes</label>
+                <textarea id="damageDescription" name="damageDescription" rows="4" 
+                          placeholder="Descreva em detalhes os danos sofridos pelo seu negócio"></textarea>
+              </div>
+            </div>
+            
+            <div class="form-card">
+              <h2><i class="fas fa-hands-helping"></i> Ajuda Necessária</h2>
+              
+              <div class="form-group">
+                <label>Tipo de Ajuda Necessária (selecione todos que se aplicam)</label>
+                <div class="checkbox-grid">
+                  <div class="checkbox-option">
+                    <input type="checkbox" id="helpFinancial" name="helpType" value="financeira">
+                    <label for="helpFinancial">Ajuda Financeira</label>
+                  </div>
+                  <div class="checkbox-option">
+                    <input type="checkbox" id="helpEquipment" name="helpType" value="equipamentos">
+                    <label for="helpEquipment">Equipamentos</label>
+                  </div>
+                  <div class="checkbox-option">
+                    <input type="checkbox" id="helpMaterials" name="helpType" value="materiais">
+                    <label for="helpMaterials">Materiais de Construção</label>
+                  </div>
+                  <div class="checkbox-option">
+                    <input type="checkbox" id="helpWorkforce" name="helpType" value="mao_de_obra">
+                    <label for="helpWorkforce">Mão de Obra</label>
+                  </div>
+                  <div class="checkbox-option">
+                    <input type="checkbox" id="helpFurniture" name="helpType" value="moveis">
+                    <label for="helpFurniture">Móveis</label>
+                  </div>
+                  <div class="checkbox-option">
+                    <input type="checkbox" id="helpConsultancy" name="helpType" value="consultoria">
+                    <label for="helpConsultancy">Consultoria</label>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="form-group">
+                <label for="helpPriority">Prioridade de Ajuda</label>
+                <select id="helpPriority" name="helpPriority" required>
+                  <option value="">Selecione a prioridade</option>
+                  <option value="urgente">Urgente - Precisamos imediatamente</option>
+                  <option value="alta">Alta - Precisamos nos próximos dias</option>
+                  <option value="media">Média - Precisamos nas próximas semanas</option>
+                  <option value="baixa">Baixa - Podemos esperar um pouco mais</option>
+                </select>
+              </div>
+              
+              <div class="form-group">
+                <label for="helpDescription">Detalhe o que você precisa</label>
+                <textarea id="helpDescription" name="helpDescription" rows="4" 
+                          placeholder="Descreva detalhadamente que tipo de ajuda você precisa"></textarea>
+              </div>
+              
+              <div class="form-group">
+                <label for="photos">Enviar fotos dos danos (opcional)</label>
+                <input type="file" id="photos" name="photos" multiple 
+                       accept="image/jpeg, image/png, image/jpg">
+                <p class="help-text">Você pode enviar até 5 fotos (JPG, PNG) para ilustrar os danos</p>
+              </div>
+            </div>
+            
+            <div class="form-group form-actions">
+              <a href="../index.html" class="btn-cancel">Cancelar</a>
+              <button type="submit" class="btn-submit">Enviar Solicitação</button>
+            </div>
+          </form>
+        </div>
+      </section>
+      
+      <section class="motivational-section">
+        <div class="container">
+          <h2>Não Desista! Estamos Juntos</h2>
+          <p>Seu negócio é importante para a economia local e para toda a comunidade. 
+             Com a ajuda de colaboradores, conseguiremos superar esse momento difícil.</p>
+          
+          <div class="success-stories">
+            <div class="success-story">
+              <img src="../assets/imgs/doador1.jpg" alt="História de Sucesso 1">
+              <div class="story-content">
+                <h3>"Voltamos mais fortes"</h3>
+                <p>"Perdemos tudo na enchente, mas graças à ajuda que recebemos através do RenovaRS, 
+                   conseguimos reabrir nossa padaria em apenas três semanas."</p>
+                <span class="story-author">- Maria da Padaria Doce Pão</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-esquerda">
+            <img src="../assets/imgs/logo.png" alt="Logo RenovaRS" />
+            <p>Juntos, podemos reconstruir! Nossa missão é reconectar a economia local através da solidariedade.</p>
+            <div class="icones-redes-sociais">
+              <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
+              <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+              <a href="#" class="social-icon"><i class="fab fa-github"></i></a>
+              <a href="#" class="social-icon"><i class="fa fa-envelope"></i></a>
+            </div>
+          </div>
+          <div class="footer-middle">
+            <h4>Links Rápidos</h4>
+            <ul>
+              <li><a href="#como-funciona">Como Funciona</a></li>
+              <li><a href="#historias">Histórias de Sucesso</a></li>
+              <li><a href="#parceiros">Parceiros</a></li>
+              <li><a href="#blog">Blog</a></li>
+            </ul>
+          </div>
+          <div class="footer-direita">
+            <h4>Navegação</h4>
+            <ul>
+              <li><a href="#ajuda">Ajuda</a></li>
+              <li><a href="#doacoes">Doações</a></li>
+              <li><a href="#sobre">Sobre</a></li>
+              <li><a href="#contato">Contato</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="copyright">
+          <p>&copy; 2024 | RenovaRS. Todos os direitos reservados.</p>
+          <div class="footer-links">
+            <a href="#termos">Termos de Uso</a>
+            <a href="#privacidade">Política de Privacidade</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="../assets/js/auth.js"></script>
+  </body>
+</html> 

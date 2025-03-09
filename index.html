@@ -4,94 +4,248 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>RenovaRS - Economia Local</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="assets/styles.css" />
+    <link rel="icon" href="/assets/imgs/abaLogo.jpg" type="image/png">
   </head>
 
   <body>
     <header>
-      <!-- Topo com frase -->
       <div class="topo-header">
-        <h3>Juntos pela reconstrução da nossa comunidade</h3>
-      </div>
-
-      <!-- Logo e navegação -->
-      <div class="navegacao-header">
-        <div class="logo">
-          <img src="assets/imgs/logo.png" alt="Logo RenovaRS" />
-        </div>
-        <div class="icone-empresa">
-          <i class="fas fa-briefcase"></i>
-        </div>
-        <div class="botoes-header">
-          <a href="public/login.php"><button class="btn-header">Acessar</button></a>
-          <a href="public/cadastro.html"><button class="btn-header">Cadastrar</button></a>
+        <div class="container">
+          <h3><i class="fas fa-heart"></i> Juntos pela reconstrução da nossa comunidade</h3>
         </div>
       </div>
-
-      <!-- Imagem de fundo com frase de destaque -->
+      <nav class="navegacao-header">
+        <div class="container">
+          <div class="logo">
+            <a href="index.html">
+              <img src="assets/imgs/logo.png" alt="Logo RenovaRS" />
+            </a>
+          </div>
+          <div class="nav-right">
+            <div class="icone-empresa">
+              <i class="fas fa-briefcase"></i>
+            </div>
+            <div class="botoes-header">
+              <a href="public/login.html" class="btn-header"><i class="fas fa-sign-in-alt"></i> Acessar</a>
+              <a href="public/cadastro.html" class="btn-header btn-header-accent"><i class="fas fa-user-plus"></i> Cadastrar</a>
+            </div>
+          </div>
+        </div>
+      </nav>
       <div class="imagem-calamidade">
-        <div class="frase-destaque">Apoie microempreendedores<br />locais ou solicite apoio para reconstrução</div>
+        <div class="overlay"></div>
+        <div class="container">
+          <div class="frase-destaque">
+            Apoie microempreendedores<br />locais ou solicite apoio para reconstrução
+            <div class="frase-subtitulo">Juntos somos mais fortes</div>
+          </div>
+        </div>
       </div>
     </header>
 
-    <!-- Seção de botões principais -->
-    <section class="acoes">
-      <div class="acao">
-        <a href="protected/ajudar.php"><button class="btn-acao">Quero Ajudar</button></a>
-      </div>
-      <div class="acao">
-        <a href="protected/receberAjuda.php"><button class="btn-acao">Preciso de Ajuda</button></a>
-      </div>
-    </section>
+    <main>
+      <section class="intro-section">
+        <div class="container">
+          <div class="intro-text">
+            <h2>O Rio Grande do Sul Precisa de Nós</h2>
+            <p>As enchentes afetaram milhares de pequenos negócios. Nossa plataforma conecta quem pode ajudar com quem precisa de apoio para recomeçar.</p>
+          </div>
+        </div>
+      </section>
+    
+      <section class="acoes">
+        <div class="container">
+          <div class="acao">
+            <div class="acao-content">
+              <i class="fas fa-hand-holding-heart acao-icon"></i>
+              <h3>Quero Ajudar</h3>
+              <p>Contribua com doações, materiais ou serviços para microempreendedores afetados.</p>
+              <a href="#" id="quero-ajudar-btn" class="btn-acao">Quero Ajudar</a>
+            </div>
+          </div>
+          <div class="acao">
+            <div class="acao-content">
+              <i class="fas fa-store acao-icon"></i>
+              <h3>Preciso de Ajuda</h3>
+              <p>Solicite apoio para reconstruir seu negócio afetado pelas enchentes.</p>
+              <a href="#" id="preciso-ajuda-btn" class="btn-acao btn-acao-secondary">Preciso de Ajuda</a>
+            </div>
+          </div>
+        </div>
+      </section>
 
-    <!-- Maiores doadores -->
+      <section class="impacto-section">
+        <div class="container">
+          <h2>Nosso Impacto</h2>
+          <div class="impacto-stats">
+            <div class="impacto-item">
+              <div class="impacto-number"><span class="counter">876</span></div>
+              <div class="impacto-label">Empresas Ajudadas</div>
+            </div>
+            <div class="impacto-item">
+              <div class="impacto-number">R$ <span class="counter">2.4</span>M</div>
+              <div class="impacto-label">Em Doações</div>
+            </div>
+            <div class="impacto-item">
+              <div class="impacto-number"><span class="counter">5280</span></div>
+              <div class="impacto-label">Voluntários</div>
+            </div>
+            <div class="impacto-item">
+              <div class="impacto-number"><span class="counter">43</span></div>
+              <div class="impacto-label">Cidades Atendidas</div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-    <section class="maiores-doadores">
-      <h2>Maiores Doadores</h2>
-      <div class="cards-doadores">
-        <div class="card">
-          <img src="assets/imgs/doador1.jpg" alt="Doador 1" />
-          <p>Doador 1 - R$ 50.000</p>
+      <section class="maiores-doadores">
+        <div class="container">
+          <h2>Maiores Doadores</h2>
+          <div class="cards-doadores">
+            <div class="card">
+              <div class="card-img">
+                <img src="assets/imgs/doador1.jpg" alt="Doador 1" />
+                <div class="card-badge">Top 1</div>
+              </div>
+              <div class="card-content">
+                <h3>Empresa Alfa</h3>
+                <p>Doação: R$ 50.000</p>
+                <span class="card-categoria">Setor Tecnológico</span>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-img">
+                <img src="assets/imgs/doador2.jpg" alt="Doador 2" />
+                <div class="card-badge">Top 2</div>
+              </div>
+              <div class="card-content">
+                <h3>Empresa Beta</h3>
+                <p>Doação: R$ 30.000</p>
+                <span class="card-categoria">Setor Alimentício</span>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-img">
+                <img src="assets/imgs/doador3.jpg" alt="Doador 3" />
+                <div class="card-badge">Top 3</div>
+              </div>
+              <div class="card-content">
+                <h3>Empresa Gama</h3>
+                <p>Doação: R$ 20.000</p>
+                <span class="card-categoria">Setor de Construção</span>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-img">
+                <img src="assets/imgs/doador4.jpg" alt="Doador 4" />
+                <div class="card-badge">Top 4</div>
+              </div>
+              <div class="card-content">
+                <h3>Empresa Delta</h3>
+                <p>Doação: R$ 15.000</p>
+                <span class="card-categoria">Setor Industrial</span>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="card">
-          <img src="assets/imgs/doador2.jpg" alt="Doador 2" />
-          <p>Doador 2 - R$ 30.000</p>
+      </section>
+      
+      <section class="cta-section">
+        <div class="container">
+          <div class="cta-content">
+            <h2>Faça Parte Desta Iniciativa</h2>
+            <p>Cada contribuição, por menor que seja, faz diferença na vida de um microempreendedor.</p>
+            <div class="cta-buttons">
+              <a href="public/cadastro.html" class="btn-cta">Cadastre-se Agora</a>
+              <a href="#about" class="btn-cta-secondary">Saiba Mais</a>
+            </div>
+          </div>
         </div>
-        <div class="card">
-          <img src="assets/imgs/doador3.jpg" alt="Doador 3" />
-          <p>Doador 3 - R$ 20.000</p>
-        </div>
-        <div class="card">
-          <img src="assets/imgs/doador4.jpg" alt="Doador 4" />
-          <p>Doador 4 - R$ 15.000</p>
-        </div>
-      </div>
-    </section>
+      </section>
+    </main>
 
-    <!-- Footer -->
     <footer>
-      <div class="footer-esquerda">
-        <img src="assets/imgs/logo.png" alt="Logo RenovaRS" />
-        <p>Juntos, podemos reconstruir!</p>
-        <div class="icones-redes-sociais">
-          <i class="fab fa-facebook"></i>
-          <i class="fab fa-instagram"></i>
-          <i class="fab fa-github"></i>
-          <i class="fa fa-envelope"></i>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-esquerda">
+            <img src="assets/imgs/logo.png" alt="Logo RenovaRS" />
+            <p>Juntos, podemos reconstruir! Nossa missão é reconectar a economia local através da solidariedade.</p>
+            <div class="icones-redes-sociais">
+              <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
+              <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+              <a href="#" class="social-icon"><i class="fab fa-github"></i></a>
+              <a href="#" class="social-icon"><i class="fa fa-envelope"></i></a>
+            </div>
+          </div>
+          <div class="footer-middle">
+            <h4>Links Rápidos</h4>
+            <ul>
+              <li><a href="#como-funciona">Como Funciona</a></li>
+              <li><a href="#historias">Histórias de Sucesso</a></li>
+              <li><a href="#parceiros">Parceiros</a></li>
+              <li><a href="#blog">Blog</a></li>
+            </ul>
+          </div>
+          <div class="footer-direita">
+            <h4>Navegação</h4>
+            <ul>
+              <li><a href="#ajuda">Ajuda</a></li>
+              <li><a href="#doacoes">Doações</a></li>
+              <li><a href="#sobre">Sobre</a></li>
+              <li><a href="#contato">Contato</a></li>
+            </ul>
+          </div>
         </div>
-      </div>
-      <div class="footer-direita">
-        <ul>
-          <li>Navegação</li>
-          <li><a href="#ajuda">Ajuda</a></li>
-          <li><a href="#doacoes">Doações</a></li>
-          <li><a href="#sobre">Sobre</a></li>
-        </ul>
-      </div>
-      <div class="copyright">
-        <p>2024 | © Deps Models. All rights reserved.</p>
+        <div class="copyright">
+          <p>&copy; 2024 | RenovaRS. Todos os direitos reservados.</p>
+          <div class="footer-links">
+            <a href="#termos">Termos de Uso</a>
+            <a href="#privacidade">Política de Privacidade</a>
+          </div>
+        </div>
       </div>
     </footer>
+
+    <script src="assets/js/auth.js"></script>
+    <script>
+      // Simples animação para contadores
+      document.addEventListener("DOMContentLoaded", function() {
+        const counters = document.querySelectorAll('.counter');
+        
+        counters.forEach(counter => {
+          const target = parseFloat(counter.textContent);
+          const increment = target / 50;
+          let current = 0;
+          
+          const updateCounter = () => {
+            if (current < target) {
+              current += increment;
+              if (current > target) current = target;
+              counter.textContent = current.toFixed(target % 1 === 0 ? 0 : 1);
+              setTimeout(updateCounter, 30);
+            }
+          };
+          
+          counter.textContent = '0';
+          
+          // Iniciar animação quando o elemento estiver visível
+          const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+              if (entry.isIntersecting) {
+                updateCounter();
+                observer.unobserve(entry.target);
+              }
+            });
+          }, { threshold: 0.5 });
+          
+          observer.observe(counter.parentElement);
+        });
+      });
+    </script>
   </body>
 </html>

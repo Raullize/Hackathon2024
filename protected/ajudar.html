@@ -1,98 +1,181 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../assets/ajudar.css" />
-    <link rel="stylesheet" href="../assets/globals.css" />
-    <title>Deps</title>
-
-    <!-- Final da Imagem de fundo com frase de destaque -->
+    <title>Quero Ajudar - RenovaRS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../assets/styles.css">
+    <link rel="icon" href="/assets/imgs/abaLogo.jpg" type="image/png">
   </head>
 
   <body>
     <header>
-      <!-- Topo com frase -->
       <div class="topo-header">
-        <h3>Juntos pela reconstrução da nossa comunidade</h3>
-      </div>
-
-      <!-- Logo e navegação -->
-      <div class="navegacao-header">
-        <div class="logo">
-          <img src="../assets/imgs/logo.png" alt="Logo RenovaRS" />
-        </div>
-        <div class="icone-empresa">
-          <i class="fas fa-briefcase" ></i>
-        </div>
-        <div class="botoes-header">
-          <button href="../routes/logout.php" class="btn-header">Sair e Deslogar</button>
+        <div class="container">
+          <h3>Juntos pela reconstrução da nossa comunidade</h3>
         </div>
       </div>
+      <nav class="navegacao-header">
+        <div class="container">
+          <div class="logo">
+            <a href="../index.html">
+              <img src="../assets/imgs/logo.png" alt="Logo RenovaRS" />
+            </a>
+          </div>
+          <div class="nav-right">
+            <div class="user-info">
+              <span id="user-name">Usuário</span>
+              <a href="#" id="logout-btn" class="btn-logout">
+                <i class="fas fa-sign-out-alt"></i> Sair
+              </a>
+            </div>
+          </div>
+        </div>
+      </nav>
     </header>
-    <div class="main">
-      <div class="left">
-        <form action="#" method="post">
-          <h4 class="cardtittle">Formulário de Cadastro</h4>
-          <p class="subtitle">Muito obrigado pela sua colaboração</p>
-          <br />
 
-          <div class="form-group">
-            <label for="nome">Nome:</label>
-            <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required />
-          </div>
-
-          <div class="form-group">
-            <label for="categoria">Categoria:</label>
-            <select id="categoria" name="categoria" required>
-              <option value="dinheiro">Dinheiro</option>
-              <option value="material">Material</option>
-              <option value="local">Local</option>
-              <option value="mao_de_obra">Mão de obra</option>
-              <option value="outro">Outro</option>
-            </select>
-          </div>
-
-          <div class="form-group">
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" placeholder="Digite seu email" required />
-          </div>
-
-          <div class="form-group">
-            <label for="descricao">Descrição:</label>
-            <textarea name="descricao" id="categoria"></textarea>
-          </div>
-
-          <button type="submit">Enviar</button>
-        </form>
-      </div>
-
-      <div class="right">
-        <h2 class="cardtittle">Precisam de ajuda</h2>
-        <div class="card">
-          <img src="../assets/imgs/empresa.jpg" alt="Imagem do Card 1" />
-          <h3>Padaria Doce:</h3>
-          <p class="cardtext">Rua Violeta, Bairro Roxo, N°123</p>
-          <p class="cardtext">docepadaria@gmail.com</p>
-          <p class="cardtext">Devido a incessante queda de lux perdemos 2 fornos elétricos e um freezer com embutidos, pedimos uma geladeira reserva até a nossa ser consertada.</p>
-        </div>
-        <div class="card">
-          <img src="../assets/imgs/empresa.jpg" alt="Imagem do Card 2" />
-          <h3>Ferragem do Prego:</h3>
-          <p class="cardtext">Rua Vermelho, Bairro Laranja, N°123</p>
-          <p class="cardtext">ferragemprego@gmail.com</p>
-          <p class="cardtext">Fomos completamente inundados devido a localização da ferragem, pedimos ajuda em mão de obra para limparmos o local e preparar a reabertura. </p>
-        </div>
-        <div class="card">
-          <img src="../assets/imgs/empresa.jpg" alt="Imagem do Card 2" />
-          <h3>Restaurante América:</h3>
-          <p class="cardtext">Rua Azul, Bairro Ciano, N°123</p>
-          <p class="cardtext">Americafood@gmail.com</p>
-          <p class="cardtext">Os ventos fortes danificaram extremamente o telhado do local, se possivel gostariamos de materiais e mão de obra para reparo do mesmo para não perdermos mais nada. </p>
-        </div>
-
+    <main class="dashboard-main">
+      <div class="dashboard-hero">
+        <div class="container">
+          <h1>Como Posso Ajudar?</h1>
+          <p>Escolha uma das opções abaixo para contribuir com a reconstrução do RS</p>
         </div>
       </div>
-    </div>
+
+      <section class="dashboard-content">
+        <div class="container">
+          <div class="dashboard-cards">
+            <div class="dashboard-card">
+              <div class="card-icon">
+                <i class="fas fa-hand-holding-heart"></i>
+              </div>
+              <h3>Doação Financeira</h3>
+              <p>Contribua com qualquer valor para ajudar as famílias e negócios afetados.</p>
+              <a href="#" class="btn-card">Doar Agora</a>
+            </div>
+            
+            <div class="dashboard-card">
+              <div class="card-icon">
+                <i class="fas fa-box-open"></i>
+              </div>
+              <h3>Doação de Materiais</h3>
+              <p>Doe ferramentas, equipamentos, móveis e outros itens necessários.</p>
+              <a href="#" class="btn-card">Ver Necessidades</a>
+            </div>
+            
+            <div class="dashboard-card">
+              <div class="card-icon">
+                <i class="fas fa-hands-helping"></i>
+              </div>
+              <h3>Trabalho Voluntário</h3>
+              <p>Ofereça suas habilidades e tempo para ajudar na reconstrução.</p>
+              <a href="#" class="btn-card">Voluntariar-se</a>
+            </div>
+            
+            <div class="dashboard-card">
+              <div class="card-icon">
+                <i class="fas fa-store"></i>
+              </div>
+              <h3>Apoiar Comércio Local</h3>
+              <p>Compre produtos e serviços de empresas afetadas pelas enchentes.</p>
+              <a href="#" class="btn-card">Ver Empresas</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="support-section">
+        <div class="container">
+          <h2>Minha Contribuição Faz a Diferença</h2>
+          
+          <div class="impact-stats">
+            <div class="impact-item">
+              <div class="impact-number">876</div>
+              <div class="impact-label">Famílias Ajudadas</div>
+            </div>
+            <div class="impact-item">
+              <div class="impact-number">453</div>
+              <div class="impact-label">Negócios Reconstruídos</div>
+            </div>
+            <div class="impact-item">
+              <div class="impact-number">R$ 2.4M</div>
+              <div class="impact-label">Em Doações</div>
+            </div>
+            <div class="impact-item">
+              <div class="impact-number">5,280</div>
+              <div class="impact-label">Voluntários</div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <section class="testimonials-section">
+        <div class="container">
+          <h2>Histórias de Impacto</h2>
+          
+          <div class="testimonials">
+            <div class="testimonial">
+              <div class="testimonial-content">
+                <p>"Graças às doações, consegui comprar novos equipamentos para minha padaria que foi completamente destruída pelas enchentes."</p>
+              </div>
+              <div class="testimonial-author">
+                <img src="../assets/imgs/doador1.jpg" alt="Maria Silva">
+                <div>
+                  <h4>Maria Silva</h4>
+                  <p>Microempreendedora</p>
+                </div>
+              </div>
+            </div>
+            
+            <div class="testimonial">
+              <div class="testimonial-content">
+                <p>"Os voluntários não apenas me ajudaram a reconstruir minha loja, mas também me deram esperança para recomeçar."</p>
+              </div>
+              <div class="testimonial-author">
+                <img src="../assets/imgs/doador2.jpg" alt="João Santos">
+                <div>
+                  <h4>João Santos</h4>
+                  <p>Comerciante Local</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-esquerda">
+            <img src="../assets/imgs/logo.png" alt="Logo RenovaRS" />
+            <p>Juntos, podemos reconstruir!</p>
+            <div class="icones-redes-sociais">
+              <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
+              <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+              <a href="#" class="social-icon"><i class="fab fa-github"></i></a>
+              <a href="#" class="social-icon"><i class="fa fa-envelope"></i></a>
+            </div>
+          </div>
+          <div class="footer-direita">
+            <ul>
+              <li>Navegação</li>
+              <li><a href="#ajuda">Ajuda</a></li>
+              <li><a href="#doacoes">Doações</a></li>
+              <li><a href="#sobre">Sobre</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="copyright">
+          <p>2024 | Deps Models. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="../assets/js/auth.js"></script>
   </body>
 </html>
