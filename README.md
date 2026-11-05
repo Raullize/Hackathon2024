@@ -15,7 +15,7 @@
 
 ## Descrição
 
-O **RenovaRS** é um protótipo de plataforma colaborativa de economia circular voltado a microempreendedores locais impactados pelas enchentes no Rio Grande do Sul. A proposta é permitir que empreendedores cadastrem suas necessidades e que empresas, ONGs e membros da comunidade ofereçam doações, ferramentas, espaços temporários ou apoio voluntário.
+O **RenovaRS** é um protótipo de plataforma colaborativa de economia circular criado para apoiar a recuperação econômica e social de comunidades afetadas por enchentes no Rio Grande do Sul, com foco em microempresas e microempreendedores locais. A proposta é permitir que empreendedores cadastrem suas necessidades e que empresas, ONGs e membros da comunidade ofereçam doações, ferramentas, espaços temporários ou apoio voluntário.
 
 O projeto foi construído em PHP com persistência em arquivos JSON, sem banco de dados relacional.
 
@@ -28,7 +28,7 @@ O projeto foi construído em PHP com persistência em arquivos JSON, sem banco d
 | Data | 12 e 13 de novembro de 2024 |
 | Local | Charqueadas, RS |
 | Formato | Hackathon presencial de 24 horas |
-| Tema/desafio | Apoiar a recuperação econômica e social de comunidades afetadas por enchentes |
+| Tema/desafio | Apoiar a recuperação econômica e social de comunidades afetadas por enchentes, com foco em microempresas locais |
 | Equipe | 3 integrantes |
 
 ## Funcionalidades
