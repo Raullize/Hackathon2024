@@ -13,8 +13,6 @@
   <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black"/>
 </p>
 
-> **Nota histórica:** o código deste repositório foi congelado no último commit feito durante a hackathon (commit `eac02b1`, de 13/11/2024). Este README foi reescrito em 2026 para padronização e não é o README original da época.
-
 ## Descrição
 
 O **RenovaRS** é um protótipo de plataforma colaborativa de economia circular voltado a microempreendedores locais impactados pelas enchentes no Rio Grande do Sul. A proposta é permitir que empreendedores cadastrem suas necessidades e que empresas, ONGs e membros da comunidade ofereçam doações, ferramentas, espaços temporários ou apoio voluntário.
